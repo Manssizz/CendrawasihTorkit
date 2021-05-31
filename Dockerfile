@@ -18,6 +18,7 @@ RUN pip3 install --no-cache-dir tgtk
 
 COPY . .
 RUN chmod +x start.sh
+RUN chmod +x alive.sh
 
 RUN useradd -ms /bin/bash  myuser
 USER myuser
