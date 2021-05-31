@@ -14,7 +14,7 @@ from .tele_upload import upload_handel
 from .rclone_upload import rclone_driver
 from .zip7_utils import add_to_zip, extract_archive
 from ..core.getVars import get_val
-from ..core.status.status import ARTask
+from ..core.status.status import ARTask, QBTask
 from ..core.status.upload import TGUploadTask
 from ..functions.Human_Format import human_readable_bytes
 from .dl_generator import generate_directs
