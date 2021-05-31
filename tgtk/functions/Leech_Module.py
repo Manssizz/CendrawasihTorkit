@@ -306,6 +306,7 @@ async def check_link(msg,rclone=False,is_zip=False, extract=False, prev_msg=None
                 transfer[1] += ul_size # for aria2 downloads
 
                 if not rclone:
+                    ul_task = TGUploadTask(dl_task)
                     await ul_task.dl_files()
 
                     try:
